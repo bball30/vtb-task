@@ -1,4 +1,4 @@
-package vtb.test.vtbtask;
+package ru.vtb.vtbtask;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

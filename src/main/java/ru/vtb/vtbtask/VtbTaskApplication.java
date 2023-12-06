@@ -1,4 +1,4 @@
-package vtb.test.vtbtask;
+package ru.vtb.vtbtask;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
