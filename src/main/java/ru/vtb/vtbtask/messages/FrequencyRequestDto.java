@@ -2,11 +2,11 @@ package ru.vtb.vtbtask.messages;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class FrequencyRequestDto {
     @NotNull
     @JsonProperty("input")

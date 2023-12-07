@@ -1,7 +1,6 @@
 package ru.vtb.vtbtask.services;
 
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -9,7 +8,6 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-@Slf4j
 public class FrequencyServiceImpl implements FrequencyService {
 
     @Override
@@ -18,8 +16,6 @@ public class FrequencyServiceImpl implements FrequencyService {
         Map<Character, Integer> frequencyMap = input.chars()
                 .mapToObj(c -> (char) c)
                 .collect(Collectors.toMap(c -> c, c -> 1, Integer::sum));
-        log.info(frequencyMap.toString());
-
 
         // возвращаем отсортированный словарь
         return frequencyMap.entrySet().stream()
